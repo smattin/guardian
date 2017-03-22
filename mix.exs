@@ -2,7 +2,7 @@ defmodule Guardian.Mixfile do
   use Mix.Project
 
   @version "0.14.2"
-  @url "https://github.com/ueberauth/guardian"
+  @url "https://github.com/smattin/guardian"
   @maintainers [
     "Daniel Neighman",
     "Sonny Scroggin",
@@ -43,7 +43,7 @@ defmodule Guardian.Mixfile do
 
   defp deps do
     [{:jose, "~> 1.8"},
-     {:phoenix, ">= 1.2.0", optional: true},
+     {:phoenix, "~> 1.3.0-rc", override: true},
      {:plug, "~> 1.0"},
      {:poison, ">= 1.3.0"},
      {:uuid, ">=1.1.1"},
